@@ -1,38 +1,55 @@
+body {
+  height: 92vh; /* اجعل ارتفاع الجسم ليملأ الشاشة */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني بين اللونين */
+  color: white; 
+}
+
 .App {
-  text-align: center;
+  color: white; /* لون النص */
+  width: 90%; /* عرض مرن */
+  max-width: 600px; /* تحديد عرض أقصى */
+  border: solid 1px white;
+  margin: 50px auto; /* محاذاة إلى المركز */
+  padding: 25px 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.to-do-container {
+  color: white; /* لون النص */
   display: flex;
   flex-direction: column;
+}
+
+.to-do-container ul li {
+  color: white; /* لون النص */
+  width: 90%; 
+  overflow-wrap: break-word;
+  list-style-type: "✍️";
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 100%; /* عرض مرن للحقل */
+  max-width: 300px; /* عرض أقصى */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 100%; /* عرض مرن للزر */
+  max-width: 300px; /* عرض أقصى */
+  margin-top: 10px; /* إضافة مسافة بين حقل الإدخال والزر */
+}
+
+span {
+  margin-left: 10px; /* استخدام margin-left بدلاً من margin-right */
 }
